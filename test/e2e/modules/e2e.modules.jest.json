@@ -8,7 +8,10 @@
     "<rootDir>/packages/**/*.spec.js"
   ],
   "setupFiles": [
+    "jest-canvas-mock",
     "<rootDir>/test/paths.setup.js"
   ],
-  "setupTestFrameworkScriptFile": "<rootDir>/test/e2e/modules/e2e.modules.setup.js"
+  "setupFilesAfterEnv": [
+    "<rootDir>/test/e2e/modules/e2e.modules.setup.js"
+  ]
 }
